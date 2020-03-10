@@ -11,7 +11,9 @@ Menu.prototype =
     game.stage.backgroundColor = "#182d3b";
     this.background = game.add.tileSprite(0, 0, 800, 600, "grass");
     this.mainMenu = this.add.group();
+    this.settingsMenu = this.add.group();
     this.createMenu();
+    this.switchWindow(0)
   },
   createMenu:function()
   {
